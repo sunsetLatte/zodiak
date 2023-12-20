@@ -1,76 +1,35 @@
 # Задача "Знаки зодиака"
-print ("Знаки зодиака")
-month = input("Введите месяц: ")
-day = int(input("Введите число: "))
+print ('"Знаки зодиака"')
 
-if month == "март":
-    if 1 <= day <= 20:
-        print("Рыбы")
-    elif 21 <= day <= 31:
-        print("Овен")
+month = input('введите месяц: ')
 
-if month == "апрель":
-    if 1 <= day <= 20:
-        print("Овен")
-    elif 21 <= day <= 30:
-        print("Телец")
+date = int(input('введите число: '))
 
-if month == "май":
-    if 1 <= day <= 20:
-        print("Телец")
-    elif 21 <= day <= 31:
-        print("Близнецы")
+print('вывод:')
 
-if month == "июнь":
-    if 1 <= day <= 21:
-        print("Близнецы")
-    elif 22 <= day <= 30:
-        print("Рак")
-
-if month == "июль":
-    if 1 <= day <= 22:
-        print("Рак")
-    elif 23 <= day <= 31:
-        print("Лев")
-
-if month == "август":
-    if 1 <= day <= 23:
-        print("Лев")
-    elif 24 <= day <= 31:
-        print("Дева")
-
-if month == "сентябрь":
-    if 1 <= day <= 23:
-        print("Дева")
-    elif 24 <= day <= 30:
-        print("Весы")
-
-if month == "октябрь":
-    if 1 <= day <= 23:
-        print("Весы")
-    elif 24 <= day <= 31:
-        print("Скорпион")
-
-if month == "ноябрь":
-    if 1 <= day <= 22:
-        print("Скорпион")
-    elif 23 <= day <= 30:
-        print("Стрелец")
-
-if month == "декабрь":
-    if 1 <= day <= 21:
-        print("Стрелец")
-    elif 22 <= day <= 31:
-        print("Козерог")
-
-if month == "январь":
-    if 1 <= day <= 20:
-        print("Козерог")
-    elif 21 <= day <= 31:
-        print("Водолей")
-
-if month == "февраль":
-    if 1 <= day <= 20:
-        print("Водолей")
-    elif 21 <= day <= 30:
-        print("Рыбы")
+if (month == 'март' and date >= 21) or (month == 'апрель' and date <= 19):
+    print('овен')
+elif (month == 'апрель' and date >= 20) or (month == 'май' and date <= 20):
+    print('телец')
+elif (month == 'май' and date >= 21) or (month == 'июнь' and date <= 21):
+    print('близнецы')
+elif (month == 'июнь ' and date >= 22) or (month == 'июль' and date <= 22):
+    print('рак')
+elif (month == 'июль' and date >= 23) or (month == 'август' and date <= 22):
+    print('лев')
+elif (month == 'август' and date >= 23) or (month == 'сентябрь' and date <= 22):
+    print('дева')
+elif (month == 'сентябрь' and date >= 23) or (month == 'октябрь' and date <= 23):
+    print('весы')
+elif (month == 'октябрь' and date >= 24) or (month == 'ноябрь' and date <= 22):
+    print('скорпион')
+elif (month == 'ноябрь' and date >= 23) or (month == 'декабрь' and date <= 21):
+    print('стрелец')
+elif (month == 'декабрь' and date >= 22) or (month == 'январь' and date <= 20):
+    print('козерог')
+elif (month == 'январь' and date >= 21) or (month == 'февраль' and date <= 18):
+    print('водолей')
+elif (month == 'февраль' and date >= 19) or (month == 'март' and date <= 20):
+    print('рыбы')
+else:
+    print('Знак зодиака не найден')
